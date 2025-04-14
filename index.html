@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>APE TECH | Leading IT Solutions Provider</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logo.jpg">   
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="vendors/prism/prism.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="assets/css/user.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .hero-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      }
+      .zoom-hover {
+        transition: transform 0.3s ease;
+      }
+      .zoom-hover:hover {
+        transform: scale(1.05);
+      }
+      .btn-primary {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-primary:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255,255,255,0.2);
+        transition: width 0.3s ease;
+      }
+      .btn-primary:hover:after {
+        width: 100%;
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--ensurance-primary);
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover:before {
+        width: 100%;
+      }
+      .gradient-card {
+        background: linear-gradient(145deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 100%);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+
+  </head>
+
+  <style>
+    a.nav-link.active::before{
+      color: goldenrod;
+      background: goldenrod;
+    }
+  </style>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/icons/logo.jpg" alt="TechSolutions Logo" class="custom-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mobile-menu-header d-lg-none">
+              <button class="close-menu">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="contact-info ms-auto me-4 d-none d-lg-flex">
+              <i class="fas fa-phone-alt me-2"></i>
+              Contact Us 
+              <a class="text-light ms-2" href="tel:+27-83-619-6423">+27-83-619-6423</a>
+            </div>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>             
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center" style="background-image:url(assets/img/illustrations/bg-3.avif);background-repeat: no-repeat;background-position:left;background-blend-mode: darken;">
+            <div class="col-md-7 col-xl-7" data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="display-2 text-light fw-thin animate__animated animate__fadeInDown">Innovative 
+                <br class="d-none d-xl-block" />
+                <strong class="fw-bolder">IT Solutions</strong>
+              </h1>
+              <p class="fs-2 text-400 animate__animated animate__fadeInUp animate__delay-1s">
+                Providing cutting-edge IT solutions to help businesses 
+                <br class="d-none d-xxl-block" />
+                thrive in the digital age
+              </p>
+              <a class="btn btn-primary btn-lg mt-5 animate__animated animate__fadeInUp animate__delay-2s" 
+                 href="#services">
+                <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                <span class="btn-text">Our Services</span>
+              </a>
+            </div>
+            <div class="col-md-5 col-xl-5 pe-xxl-0" data-aos="fade-left" data-aos-duration="1000">
+              <div class="card gradient-card shadow">
+                <div class="card-body p-4 p-xl-6">
+                  <img src="assets/img/illustrations/ict.png" alt="ICT Solutions" 
+                       class="img-fluid zoom-hover">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-light text-center mb-6" data-aos="fade-up">Our Services</h2>
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/software.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Software Development">
+                    <h4 class="text-200">Customized Software Development</h4>
+                    <p class="text-400">We provide customized software development services for businesses of all sizes. Our software development team builds custom solutions that meet your specific needs.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/web.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Web Development">
+                    <h4 class="text-200">Web Design and Development</h4>
+                    <p class="text-400">We offer web design and development services that help businesses establish a strong online presence, with SEO-optimized websites designed to convert visitors into customers.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/consulting.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="IT Consulting">
+                    <h4 class="text-200">IT Consulting</h4>
+                    <p class="text-400">Expert consulting services to align your technology strategies with business objectives and optimize IT infrastructure investments.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/application.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Application Development">
+                    <h4 class="text-200">Application Development</h4>
+                    <p class="text-400">Our skilled team creates high-quality, user-friendly applications using the latest technologies to address your unique business needs.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/install.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Software Installation">
+                    <h4 class="text-200">Software Installation</h4>
+                    <p class="text-400">Comprehensive software installation services with environment assessment and seamless deployment following industry best practices.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/stationary.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Office Supplies">
+                    <h4 class="text-200">Supply and Delivery</h4>
+                    <p class="text-400">Reliable supply and delivery services for office stationery and supplies, ensuring access to essential business materials.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card h-100 p-4 text-center service-card">
+                    <img src="assets/img/services/graphics.jpg" 
+                         class="mx-auto mb-4 rounded img-fluid zoom-hover" 
+                         style="height: 160px; object-fit: cover;" 
+                         alt="Graphic Design">
+                    <h4 class="text-200">Graphic Designing</h4>
+                    <p class="text-400">We provide professional graphic design services to help our clients create visually compelling and effective designs for their businesses, from logo design and branding to marketing materials and website design.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-8 bg-dark position-relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="decoration-wrapper">
+          <div class="decoration-dot"></div>
+          <div class="decoration-dot"></div>
+          <div class="decoration-dot"></div>
+        </div>
+
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-light mb-5 text-center display-4 fw-bold" data-aos="fade-down">About Us</h2>
+              
+              <div class="about-card mb-5" data-aos="fade-right" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <h4 class="text-200 mb-3">
+                  <i class="fas fa-rocket me-2"></i>
+                  Mission Statement
+                </h4>
+                <p class="text-400">APE TECH is committed to providing cutting-edge IT solutions to help businesses thrive in the digital age. We believe in building long-term partnerships with our clients by delivering exceptional IT service and innovative solutions that drive growth and success.</p>
+              </div>
+              
+              <div class="about-card mb-5" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <h4 class="text-200 mb-3">
+                  <i class="fas fa-eye me-2"></i>
+                  Vision Statement
+                </h4>
+                <p class="text-400">At our company, we aspire to be a globally recognized provider of innovative and reliable technology solutions that enable businesses to thrive in the digital age. Our vision is to become the leading provider of customized IT solutions that empower organizations to optimize their operations, achieve their strategic goals, and drive growth and success.</p>
+                <p class="text-400">We envision ourselves as a technology partner that businesses can rely on to provide exceptional service, exceptional value, and exceptional outcomes.</p>
+              </div>
+
+              <div class="about-card mb-5" data-aos="fade-right" data-aos-delay="300">
+                <div class="card-glow"></div>
+                <h4 class="text-200 mb-3">
+                  <i class="fas fa-bullseye me-2"></i>
+                  Our Goal
+                </h4>
+                <p class="text-400">To consistently deliver cutting edge IT solutions that meet the evolving needs of the country, and the world at large.</p>
+              </div>
+
+              <div class="about-card" data-aos="fade-left" data-aos-delay="400">
+                <div class="card-glow"></div>
+                <h4 class="text-200 mb-3">
+                  <i class="fas fa-info-circle me-2"></i>
+                  Overview
+                </h4>
+                <p class="text-400">APE TECH is a leading IT service provider that offers a comprehensive range of services to clients across various industries. Our team of experienced professionals specializes in providing customized solutions that cater for the unique needs of each client. Our expertise includes, but not limited to, software development, web design and development, application development, graphic designing, IT consulting, software installation, supply and delivery office stationery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries" class="py-8 bg-dark position-relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="industry-bg-animation">
+          <div class="circuit-line"></div>
+          <div class="circuit-line"></div>
+          <div class="circuit-line"></div>
+        </div>
+
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-light text-center mb-6 display-4 fw-bold" data-aos="fade-down">
+                Industries Served
+              </h2>
+              
+              <div class="industries-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-hospital"></i>
+                  <h4>Healthcare</h4>
+                </div>
+                
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-chart-line"></i>
+                  <h4>Finance</h4>
+                </div>
+                
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-shopping-cart"></i>
+                  <h4>Retail</h4>
+                </div>
+                
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-industry"></i>
+                  <h4>Manufacturing</h4>
+                </div>
+                
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-graduation-cap"></i>
+                  <h4>Education</h4>
+                </div>
+                
+                <div class="industry-card" data-tilt>
+                  <i class="fas fa-shield-alt"></i>
+                  <h4>SAPS</h4>
+                </div>
+              </div>
+
+              <p class="text-400 text-center mt-5 industry-text" data-aos="fade-up" data-aos-delay="400">
+                We serve clients across various industries, including healthcare, finance, retail, manufacturing, education, SAPS, and private individuals. We have extensive experience working with clients in any industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-choose-us" class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-light text-center mb-6">Why Choose APE TECH</h2>
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 p-4">
+                    <h4 class="text-200">Experienced Professionals</h4>
+                    <p class="text-400">With a proven track record of delivering innovative solutions</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 p-4">
+                    <h4 class="text-200">Tailored Solutions</h4>
+                    <p class="text-400">To meet the unique needs of each client</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 p-4">
+                    <h4 class="text-200">Collaborative Approach</h4>
+                    <p class="text-400">To building long-term partnerships with clients</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 p-4">
+                    <h4 class="text-200">Commitment to Excellence</h4>
+                    <p class="text-400">Delivering exceptional service and value to our clients</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 p-4">
+                    <h4 class="text-200">Industry Experience</h4>
+                    <p class="text-400">Extensive experience across various industries</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ceo-message" class="py-8 bg-dark">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div class="ceo-image-wrapper">
+                <div class="circular-portrait">
+                  <img src="assets/img/team/panashe-2.png" alt="CEO Portrait">
+                  <div class="rotating-border"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="ceo-content">
+                <h2 class="display-4 mb-4 text-light">CEO'S<br>MESSAGE</h2>
+                <div class="message-content text-400">
+                  <p>Welcome to Ape Tech. As the founder, I want to take a moment to reflect on our journey. Our story began with a simple idea: to provide reliable and innovative IT solutions that empower businesses to thrive in a digital world.</p>
+                  
+                  <p>We have grown from a small team into a trusted partner for many organizations. Our commitment to excellence has driven us to achieve significant milestones.</p>
+                  
+                  <p>We pride ourselves on building lasting relationships with our clients. Your success is our success. We are dedicated to understanding your unique needs and delivering tailored solutions that make a difference.</p>
+                  
+                  <p>Thank you for visiting our website. We invite you to explore our services and learn how we can help you achieve your goals. Together, let's explore the flexibility of technology.</p>
+                  
+                  <div class="signature mt-4">
+                    <h3 class="mb-0 text-light">PANASHE MUTOBAYA</h3>
+                    <p class="text-400">Chief Executive Officer<br>Ape Tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-8">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-light text-center mb-8">Contact Us</h2>
+            <div class="col-lg-6">
+              <h3 class="text-200 mb-4">Get In Touch</h3>
+              <p class="text-400">
+                <i class="fas fa-map-marker-alt me-3"></i>
+                133a Kempston Avenue<br>
+                Benoni, South Africa
+              </p>
+              <p class="text-400">
+                <i class="fas fa-phone-alt me-3"></i>
+                <a href="tel:+27749915701">+27 74 991 5701</a>
+              </p>
+              <p class="text-400">
+                <i class="fas fa-envelope me-3"></i>
+                <a href="mailto:apetech209@gmail.com">apetech209@gmail.com</a>
+              </p>
+              <p class="text-400">
+                <i class="fas fa-globe me-3"></i>
+                <a href="http://www.apetech.co.za" target="_blank">www.apetech.co.za</a>
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <form class="contact-form">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer class="py-4 bg-black">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0 text-400">&copy; 2023 TechSolutions. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline text-center text-md-end mb-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-400"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-400"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-400"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="vendors/popper/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/anchorjs/anchor.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/lodash/lodash.min.js"></script>
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Navbar color change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-dark', 'shadow');
+            } else {
+                navbar.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
+  </body>
+
+</html>
+<style>
+
+   .hero-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-section {
+            margin-top: 120px;
+        }
+
+        .circular-image-container {   
+          width: 200px;
+          height: 200px;      
+      }
+    }
+
+  .circular-image-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    object-position: 200px 200px; 
+  }
+
+  .circular-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .animated-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: gold;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+<style>
+  .navbar {
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .navbar-brand {
+    padding: 0.5rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    height: 150px;  /* Increased height */
+    width: auto;   /* Maintain aspect ratio */
+    border-radius: 8px;  /* Slightly rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);  /* Subtle shadow */
+    transition: transform 0.3s ease;  /* Smooth hover effect */
+  }
+
+  .custom-logo:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+  }
+
+  @media (max-width: 991px) {
+    .navbar-brand img {
+      height: 150px;
+    }
+    
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    .contact-info {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+</style>
+
+<style>
+  #ceo-message {
+    background: linear-gradient(to right, #000, #1a1a1a);
+  }
+
+  .ceo-image-wrapper {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circular-portrait {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .circular-portrait img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+  }
+
+  .rotating-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: gold;
+    border-right-color: gold;
+    animation: rotate 3s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .text-400 {
+    color: #a0a0a0;
+  }
+
+  @media (max-width: 768px) {
+    .circular-portrait {
+      width: 300px;
+      height: 300px;
+    }
+  }
+</style>
+
+<style>
+.about-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, rgba(255,215,0,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.about-card:hover .card-glow {
+  opacity: 1;
+  transform: scale(2);
+}
+
+.decoration-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.decoration-dot {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, rgba(255,215,0,0) 70%);
+  border-radius: 50%;
+  animation: float 15s infinite ease-in-out;
+}
+
+.decoration-dot:nth-child(1) {
+  top: -150px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.decoration-dot:nth-child(2) {
+  top: 50%;
+  right: -150px;
+  animation-delay: -5s;
+}
+
+.decoration-dot:nth-child(3) {
+  bottom: -150px;
+  left: 50%;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 50px);
+  }
+  50% {
+    transform: translate(0, 100px);
+  }
+  75% {
+    transform: translate(-50px, 50px);
+  }
+}
+
+/* Add smooth transition for icons */
+.fas {
+  color: gold;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover .fas {
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .decoration-dot {
+    width: 200px;
+    height: 200px;
+  }
+}
+</style>
+
+<script>
+// Add mouse move effect for card glow
+document.querySelectorAll('.about-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    const glow = card.querySelector('.card-glow');
+    glow.style.left = `${x}px`;
+    glow.style.top = `${y}px`;
+  });
+});
+</script>
+
+<style>
+.industry-bg-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.circuit-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(255,215,0,0.1), transparent);
+  height: 2px;
+  width: 100%;
+  animation: circuit-animate 8s linear infinite;
+}
+
+.circuit-line:nth-child(1) { top: 20%; animation-delay: 0s; }
+.circuit-line:nth-child(2) { top: 50%; animation-delay: -4s; }
+.circuit-line:nth-child(3) { top: 80%; animation-delay: -2s; }
+
+@keyframes circuit-animate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.industry-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255,215,0,0.3);
+}
+
+.industry-card i {
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover i {
+  transform: scale(1.2) translateZ(20px);
+}
+
+.industry-card h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+  transform: translateZ(10px);
+}
+
+.industry-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.industry-text::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: gold;
+}
+
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .industry-card {
+    padding: 1.5rem;
+  }
+
+  .industry-card i {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<script>
+// Initialize tilt effect on industry cards
+VanillaTilt.init(document.querySelectorAll(".industry-card"), {
+  max: 15,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.2,
+});
+
+// Add hover effect for icons
+document.querySelectorAll('.industry-card').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.querySelector('i').style.transform = 'scale(1.2) translateZ(20px)';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    card.querySelector('i').style.transform = 'scale(1) translateZ(0)';
+  });
+});
+</script>
+
+<style>
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 2rem;
+    z-index: 1000;
+    transition: right 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  .close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .close-menu:focus {
+    outline: none;
+  }
+
+  .navbar-toggler {
+    z-index: 1001;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  /* Hide hamburger when menu is active */
+  .navbar-toggler.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .contact-info {
+    margin: 2rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info a {
+    margin-top: 0.5rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const closeMenu = document.querySelector('.close-menu');
+
+  // Handle menu open
+  navbarToggler.addEventListener('click', function() {
+    navbarCollapse.classList.add('show');
+    navbarToggler.classList.add('hidden'); // Hide hamburger
+    document.body.style.overflow = 'hidden';
+  });
+
+  // Handle menu close
+  closeMenu.addEventListener('click', function() {
+    navbarCollapse.classList.remove('show');
+    navbarToggler.classList.remove('hidden'); // Show hamburger
+    document.body.style.overflow = '';
+  });
+
+  // Close menu when clicking a nav link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      navbarCollapse.classList.remove('show');
+      navbarToggler.classList.remove('hidden'); // Show hamburger
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+    if (!isClickInside && navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+      navbarToggler.classList.remove('hidden'); // Show hamburger
+      document.body.style.overflow = '';
+    }
+  });
+});
+</script>
+
+
+
